@@ -1,0 +1,247 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  --primary-color: #08bfff;
+  --secondary-color: #0efff9;
+  --dark-color: #0c388f;
+  /* --background-color: #16192a; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #f4f4f4;
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 24, 204, 1) 0%,
+    rgba(20, 245, 231, 1) 0%,
+    rgba(255, 145, 240, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  padding: 0.3rem;
+}
+
+header {
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+.icono {
+  border: none;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.icono:hover {
+  border-radius: 50%;
+
+  .count {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+  }
+}
+
+.count {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 0 0.25rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+section {
+  grid-area: productos;
+  text-align: center;
+  color: #000;
+}
+
+.container-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin: 2rem;
+
+  button {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    transform: scale(1.1);
+  }
+}
+
+.card {
+  width: 250px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+}
+
+.precio {
+  color: #0078d7;
+  font-weight: bold;
+}
+
+.container-resenas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.resena {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contacto {
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacto {
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+}
+
+.contacto input,
+.contacto textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.button-info {
+  background: #0078d7;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+}
+
+.button-info:hover {
+  background: #005bb5;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #000;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.table-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #0056b3;
+}
+
+.table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.table tfoot {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: right;
+}
